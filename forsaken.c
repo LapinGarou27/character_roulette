@@ -24,11 +24,11 @@ int main(void)
     int i = 0;
 
     srand(time(NULL));
-    rint =  rand() % 10;
-    for (; rint %10 != forsaken_choose[i].character_num; i += 1){
+    rint =  rand() % 50;
+    for (; rint != forsaken_choose[i].character_num; i += 1){
         if (forsaken_choose[i].character_num == 84){
-            printf("Error: index out of range -> forsaken_choose");
-            return 84;
+            printf("No reroll for you !\n");
+            return 0;
         }
     }
     printf("Character choosed: %s\n", forsaken_choose[i].character);
